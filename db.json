@@ -1,16 +1,11 @@
 {
     "users": [{
-        "aboutMe": "about",
-        "wishList": "wishlist",
-        "dontLike": "dont't line",
-        "password": "Password",
-        "gmail": "Email",
-        "cookie": ""
-    }, {
-        "aboutMe": "2wedf",
-        "wishList": "lkn",
-        "dontLike": "bnmkl",
-        "password": " nml",
-        "gmail": "plm"
+        "aboutMe": ";l,",
+        "wishList": ",;",
+        "dontLike": ";l.,",
+        "password": "lkmjn",
+        "gmail": "lkjmn@gmail.com",
+        "cookie": "3xh$puhobxp*",
+        "isAdmin": false
     }]
 }

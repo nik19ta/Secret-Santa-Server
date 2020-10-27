@@ -3,19 +3,27 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const jsonParser = bodyParser.json()
+const cookieParser = require('cookie-parser');
 
 const db = require('./db')
 
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
+const port = 3650;
+
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
 });
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 app.use(bodyParser.json());
 
-app.post('/add', jsonParser, async function (req, res) { 
+app.use(cookieParser());
+
+app.post('/add', jsonParser, async function (req, res) {
+    console.log(req.body);
     try {
         let cookie = db.cookie_generate(12);
         let data = {
@@ -32,29 +40,90 @@ app.post('/add', jsonParser, async function (req, res) {
 
         let result = db.new_user(data);
         if (result != true) {
-            console.log('error new user');
-            res.send('error')
+            res.send({
+                'status': 'error'
+            })
         }
-        res.send('ok');
-    } catch (error) {
-        res.send('error')
-    }
-})
-app.post('/AllData', function (req, res) { 
-    try {
-        let result = db.getAllUsers(false);
-        res.send({'success':result});
-    } catch (error) {
-        res.send('error')
-    }
-})
-app.post('/count', function (req, res) { 
-    try {
-        let result = db.getAllUsers(true);
-        res.send({'success':result});
+        res.cookie("user", cookie);
+        res.send({
+            'status': 'ok',
+            'data': data
+        });
     } catch (error) {
         res.send('error')
     }
 })
 
-app.listen(3650);
+app.post('/login', jsonParser, async function (req, res) {
+    console.log(req.body);
+
+    let data = db.select_user(req.body.email, req.body.password)
+    console.log(data);
+    res.send({"data":data})
+    // try {
+    //     let data = {
+    //         aboutMe: req.body.about,
+    //         Name: req.body.Name,
+    //         wishList: req.body.wishlist,
+    //         dontLike: req.body.blacklist,
+    //         password: req.body.password,
+    //         gmail: req.body.email,
+    //         branch: req.body.branch,
+    //         department: req.body.department,
+    //         cookie: cookie
+    //     }
+
+    //     let result = db.new_user(data);
+    //     if (result != true) {
+    //         res.send({
+    //             'status': 'error'
+    //         })
+    //     }
+    //     res.cookie("user", cookie);
+    //     res.send({
+    //         'status': 'ok',
+    //         'data': data
+    //     });
+    // } catch (error) {
+    //     res.send('error')
+    // }
+})
+
+app.get('/getcookies', (req, res)=>{ 
+    res.send(req.cookies);
+}); 
+
+app.post('/auto_login', (req, res) => {
+    console.log(req.cookies);
+    let user = db.select_user_cookie(req.cookies);
+    console.log(user);
+    if (user != null) res.send({'data':user})
+    else res.send({'data':'error'})
+    
+});
+
+
+app.post('/AllData', function (req, res) {
+    try {
+        let result = db.getAllUsers(false);
+        res.send({
+            'success': result
+        });
+    } catch (error) {
+        res.send('error')
+    }
+})
+app.post('/count', function (req, res) {
+    try {
+        let result = db.getAllUsers(true);
+        res.send({
+            'success': result
+        });
+    } catch (error) {
+        res.send('error')
+    }
+})
+
+app.listen(port, () => {
+    console.log(`server start on port ${port}`);
+});

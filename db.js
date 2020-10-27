@@ -2,13 +2,16 @@ const fs = require('fs');
 const filename = "./db.json";
 const encoding = "utf8";
 
+const randint = (min, max) => {
+    return +(Math.random() * (max - min) + min).toFixed(0)
+};
 
 function cookie_generate(count) {
     let dictionary = 'qwertyuiopasdfghjklzxcvbnm1234567890!@#$%^&*';
     let cookie = "";
 
     for (let i = 0; i < count; i++) {
-        cookie = cookie + cl[Math.random() * (dictionary.length - 0) + 0]
+        cookie = cookie + dictionary[randint(0, dictionary.length)]
     }
     return cookie
 }
@@ -28,12 +31,32 @@ function select_user(login, password) {
     let data = JSON.parse(file);
     let count = 0;
     for (let i = 0; i < data['users'].length; i++) {
-        if (login === data['users'][i].login && password === data['users'][i].password) {
+        console.log('========');
+        console.log(data['users'][i].gmail);
+        console.log(login);
+        console.log(data['users'][i].password);
+        console.log(password);
+        console.log('========');
+
+
+        if (login == data['users'][i].gmail && password == data['users'][i].password) {
             count = 1;
             break
         }
     }
     return count > 0
+};
+function select_user_cookie(cookie) {
+    let file = fs.readFileSync(filename, encoding);
+    let data = JSON.parse(file);
+    let user = null;
+    for (let i = 0; i < data['users'].length; i++) {
+        if (cookie === data['users'][i].cookie) {
+            user =  data['users'][i];
+            break
+        }
+    }
+    return user
 };
 
 function edit_user(login, password, key, value) {
@@ -65,3 +88,4 @@ module.exports.select_user = select_user;
 module.exports.getAllUsers = getAllUsers;
 module.exports.edit_user = edit_user;
 module.exports.cookie_generate = cookie_generate;
+module.exports.select_user_cookie = select_user_cookie;
