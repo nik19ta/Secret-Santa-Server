@@ -82,6 +82,11 @@ function getAllUsers(count) {
         return data['users']
     }
 }
+function get_counts() {
+    let file = fs.readFileSync(filename, encoding);
+    let data = JSON.parse(file);
+    return data['users'].length
+}
 
 module.exports.new_user = new_user;
 module.exports.select_user = select_user;
@@ -89,3 +94,4 @@ module.exports.getAllUsers = getAllUsers;
 module.exports.edit_user = edit_user;
 module.exports.cookie_generate = cookie_generate;
 module.exports.select_user_cookie = select_user_cookie;
+module.exports.get_counts = get_counts;
