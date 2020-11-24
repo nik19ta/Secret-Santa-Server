@@ -87,6 +87,40 @@ function get_counts() {
     let data = JSON.parse(file);
     return data['users'].length
 }
+function get_counts_d() {
+    let file = fs.readFileSync(filename, encoding);
+    let data = JSON.parse(file);
+
+    let d_ = []
+    let d_counts = 0;
+    for (let i = 0; i < data['users'].length; i++) {
+        console.log(data['users'][i].department);
+        if (d_.indexOf(data['users'][i].department) === -1) {
+            d_.push(data['users'][i].department)
+            d_counts++
+        }
+        
+    }
+
+    return d_counts -1
+}
+function get_counts_b() {
+    let file = fs.readFileSync(filename, encoding);
+    let data = JSON.parse(file);
+
+    let d_ = []
+    let b_counts = 0;
+    for (let i = 0; i < data['users'].length; i++) {
+        console.log(data['users'][i].branch);
+        if (d_.indexOf(data['users'][i].branch) === -1) {
+            d_.push(data['users'][i].branch)
+            b_counts++
+        }
+        
+    }
+
+    return b_counts - 1
+}
 
 module.exports.new_user = new_user;
 module.exports.select_user = select_user;
@@ -95,3 +129,5 @@ module.exports.edit_user = edit_user;
 module.exports.cookie_generate = cookie_generate;
 module.exports.select_user_cookie = select_user_cookie;
 module.exports.get_counts = get_counts;
+module.exports.get_counts_d = get_counts_d;
+module.exports.get_counts_b = get_counts_b;

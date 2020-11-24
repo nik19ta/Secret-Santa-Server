@@ -30,14 +30,16 @@ app.post('/add', jsonParser, async function (req, res) {
         let cookie = db.cookie_generate(12);
         console.log(req.body);
 
-        let info = get_info_user.select_user('E-mail',req.body.email);
-        
+        let info = get_info_user.select_user('E-mail', req.body.email);
+
         let data = {
             aboutMe: req.body.about,
-            Name: info['ФИО'],
             password: req.body.password,
             gmail: req.body.email,
+            Name: info['ФИО'],
             department: info['Фактический департамент'],
+            department: info['Фактический департамент'],
+            Position: info['Позиция'],
             branch: info['Фактическое подразделение'],
             deliveryDate: req.body.deliveryDate,
             adress: req.body.adress,
@@ -65,7 +67,9 @@ app.post('/login', jsonParser, async function (req, res) {
     console.log(req.body);
 
     let data = db.select_user(req.body.email, req.body.password)
-    res.send({"data":data})
+    res.send({
+        "data": data
+    })
     // try {
     //     let data = {
     //         aboutMe: req.body.about,
@@ -95,12 +99,19 @@ app.post('/login', jsonParser, async function (req, res) {
     // }
 })
 
-app.get('/getcookies', (req, res)=>{ 
+app.get('/getcookies', (req, res) => {
     res.send(req.cookies);
-}); 
-app.get('/count', (req, res)=>{ 
+});
+app.get('/count', (req, res) => {
     let count = db.get_counts()
-    res.send({"counts":count});
+    let count_d = db.get_counts_d()
+    let count_b = db.get_counts_b()
+
+    res.send({
+        "counts": count,
+        "deportaments": count_d,
+        "branches": count_b,
+    });
 });
 
 
@@ -112,9 +123,13 @@ app.post('/auto_login', (req, res) => {
     console.log(req.cookies);
     let user = db.select_user_cookie(req.cookies);
     console.log(user);
-    if (user != null) res.send({'data':user})
-    else res.send({'data':'error'})
-    
+    if (user != null) res.send({
+        'data': user
+    })
+    else res.send({
+        'data': 'error'
+    })
+
 });
 
 
@@ -126,6 +141,33 @@ app.post('/AllData', function (req, res) {
         });
     } catch (error) {
         res.send('error')
+    }
+})
+app.get('/get_count_users', function (req, res) {
+    try {
+        let result = db.getAllUsers(false);
+
+        let data = [];
+
+        for (let i = 0; i < result.length; i++) {
+            console.log(result[i]);
+
+            if (result[i]['Name'] != null && data.length < 6) {
+                data.push({
+                    name: result[i]['Name'],
+                    Position: result[i]['Position']
+                })
+            }
+        }
+        // for (let i = 0; i < array.length; i++) {
+        //     const element = array[i];
+            
+        // }
+        res.send({
+            'success': data
+        });
+    } catch (error) {
+        res.send({'status': 'error'})
     }
 })
 app.post('/count', function (req, res) {

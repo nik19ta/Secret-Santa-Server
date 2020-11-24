@@ -6,7 +6,8 @@ function select_user(name, name_) {
     let user = {
         'ФИО': null,
         'Фактический департамент':null,
-        'Фактическое подразделение':null
+        'Фактическое подразделение':null,
+        'Позиция':null
     };
 
     for (let i = 0; i < data['users'].length; i++) {
