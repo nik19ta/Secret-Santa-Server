@@ -74,10 +74,10 @@ app.post('/add', jsonParser, async function (req, res) {
 
 app.post('/login', jsonParser, async function (req, res) {
     console.log(req.body);
-
+    let info=null;
     let data = db.select_user(req.body.email, req.body.password)
     if (data) {
-        let info = db.git_info(req.body.email, req.body.password)
+        info = db.git_info(req.body.email, req.body.password)
     }
     res.send({
         "data": data,
