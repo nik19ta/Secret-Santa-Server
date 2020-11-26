@@ -1,6 +1,8 @@
 const fs = require('fs');
 
 function select_user(name, name_) {
+    name = name.toLowerCase()
+    name_ = name.toLowerCase()
     let file = fs.readFileSync("./discharge.json", "utf8");
     let data = JSON.parse(file);
     let user = {
