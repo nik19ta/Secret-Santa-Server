@@ -50,6 +50,7 @@ app.post('/add', jsonParser, async function (req, res) {
             branch: info['Фактическое подразделение'],
             deliveryDate: req.body.deliveryDate,
             adress: req.body.adress,
+            phone: req.body.phone,
             isAdmin: false,
             cookie: cookie,
             img: randint(1, 6)

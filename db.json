@@ -23,32 +23,6 @@
         "deliveryDate": "",
         "adress": "к",
         "isAdmin": false,
-        "cookie": "f11vrg#jjfkb",
-        "img": 2
-    }, {
-        "aboutMe": "к",
-        "password": "13111999",
-        "gmail": "eskvortsova@croc.ru",
-        "Name": "Скворцова Екатерина Александровна",
-        "department": "Департамент по работе с персоналом",
-        "Position": "Стажер",
-        "branch": "отдел корпоративной культуры и внутренних коммуникаций",
-        "deliveryDate": "",
-        "adress": "к",
-        "isAdmin": false,
-        "cookie": "cfzoa3gwna@a",
-        "img": 6
-    }, {
-        "aboutMe": "к",
-        "password": "13111999",
-        "gmail": "eskvortsova@croc.ru",
-        "Name": "Скворцова Екатерина Александровна",
-        "department": "Департамент по работе с персоналом",
-        "Position": "Стажер",
-        "branch": "отдел корпоративной культуры и внутренних коммуникаций",
-        "deliveryDate": "",
-        "adress": "к",
-        "isAdmin": false,
         "cookie": "s*jdaq0m2i!u",
         "img": 4
     }, {
@@ -64,5 +38,18 @@
         "isAdmin": false,
         "cookie": "q6dtuhyn12ro",
         "img": 5
+    }, {
+        "aboutMe": "..",
+        "password": "3275",
+        "gmail": "nikita@taki.pro",
+        "Name": "nikita",
+        "department": null,
+        "Position": "hz",
+        "branch": null,
+        "deliveryDate": "2020-12-24",
+        "adress": "..",
+        "isAdmin": false,
+        "cookie": "k0#t1g@3&^7r",
+        "img": 4
     }]
 }
