@@ -13,6 +13,11 @@ const db = require('./db')
 
 const port = 3650;
 
+const randint = (min, max) => {
+    return +(Math.random() * (max - min) + min).toFixed(0)
+};
+
+
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -46,7 +51,8 @@ app.post('/add', jsonParser, async function (req, res) {
             deliveryDate: req.body.deliveryDate,
             adress: req.body.adress,
             isAdmin: false,
-            cookie: cookie
+            cookie: cookie,
+            img: randint(1, 6)
         }
 
         let result = db.new_user(data);
@@ -72,33 +78,6 @@ app.post('/login', jsonParser, async function (req, res) {
     res.send({
         "data": data
     })
-    // try {
-    //     let data = {
-    //         aboutMe: req.body.about,
-    //         Name: req.body.Name,
-    //         wishList: req.body.wishlist,
-    //         dontLike: req.body.blacklist,
-    //         password: req.body.password,
-    //         gmail: req.body.email,
-    //         branch: req.body.branch,
-    //         department: req.body.department,
-    //         cookie: cookie
-    //     }
-
-    //     let result = db.new_user(data);
-    //     if (result != true) {
-    //         res.send({
-    //             'status': 'error'
-    //         })
-    //     }
-    //     res.cookie("user", cookie);
-    //     res.send({
-    //         'status': 'ok',
-    //         'data': data
-    //     });
-    // } catch (error) {
-    //     res.send('error')
-    // }
 })
 
 app.get('/getcookies', (req, res) => {
@@ -112,7 +91,7 @@ app.get('/count', (req, res) => {
     res.send({
         "counts": count,
         "deportaments": count_d,
-        "branches": count_b,
+        "branches": count_b
     });
 });
 
@@ -157,7 +136,8 @@ app.get('/get_count_users', function (req, res) {
             if (result[i]['Name'] != null && data.length < 6) {
                 data.push({
                     name: result[i]['Name'],
-                    Position: result[i]['Position']
+                    Position: result[i]['Position'],
+                    img: result[i]['img']
                 })
             }
         }
