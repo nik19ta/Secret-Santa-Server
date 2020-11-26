@@ -6,8 +6,10 @@ const jsonParser = bodyParser.json()
 const cookieParser = require('cookie-parser');
 
 const get_info_user = require('./croc_users');
+const path = require('path');
 
 const db = require('./db')
+
 
 const port = 3650;
 
