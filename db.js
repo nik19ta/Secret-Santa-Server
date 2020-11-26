@@ -46,6 +46,18 @@ function select_user(login, password) {
     }
     return count > 0
 };
+function git_info(login, password) {
+    let file = fs.readFileSync(filename, encoding);
+    let data = JSON.parse(file);
+    let count = 0;
+    for (let i = 0; i < data['users'].length; i++) {
+        if (login == data['users'][i].gmail && password == data['users'][i].password) {
+            count = data['users'][i];
+            break
+        }
+    }
+    return count
+};
 function select_user_cookie(cookie) {
     let file = fs.readFileSync(filename, encoding);
     let data = JSON.parse(file);
@@ -131,3 +143,4 @@ module.exports.select_user_cookie = select_user_cookie;
 module.exports.get_counts = get_counts;
 module.exports.get_counts_d = get_counts_d;
 module.exports.get_counts_b = get_counts_b;
+module.exports.git_info = git_info;
