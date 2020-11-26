@@ -84,6 +84,14 @@ app.post('/login', jsonParser, async function (req, res) {
         "info": info
     })
 })
+app.get('/all_users', jsonParser, async function (req, res) {
+    console.log(req.body);
+
+    let data = db.getAllUsers(false)
+    res.send({
+        "data": data
+    })
+})
 
 app.get('/getcookies', (req, res) => {
     res.send(req.cookies);

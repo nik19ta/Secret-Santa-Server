@@ -1,6 +1,7 @@
 {
     "users": [{
         "aboutMe": "123",
+        "phone":null,
         "password": "UsLi3EW8dMXWxgL",
         "gmail": "bananacorpse@gmail.com",
         "Name": null,
@@ -14,6 +15,7 @@
         "img": 1
     }, {
         "aboutMe": "к",
+        "phone":null,
         "password": "13111999",
         "gmail": "eskvortsova@croc.ru",
         "Name": "Скворцова Екатерина Александровна",
@@ -27,6 +29,7 @@
         "img": 4
     }, {
         "aboutMe": "тест",
+        "phone":null,
         "password": "тест",
         "gmail": "ATrushcheva@croc.ru",
         "Name": "Трущева Анастасия Александровна",
@@ -40,6 +43,7 @@
         "img": 5
     }, {
         "aboutMe": "..",
+        "phone":null,
         "password": "3275",
         "gmail": "nikita@taki.pro",
         "Name": "nikita",
