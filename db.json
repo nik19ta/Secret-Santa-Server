@@ -12,7 +12,8 @@
         "adress": "123",
         "isAdmin": false,
         "cookie": "3!&rt@s9ja04",
-        "img": 1
+        "img": 1,
+        "isPart": false
     }, {
         "aboutMe": "к",
         "phone":null,
@@ -26,7 +27,8 @@
         "adress": "к",
         "isAdmin": false,
         "cookie": "s*jdaq0m2i!u",
-        "img": 4
+        "img": 4,
+        "isPart": false
     }, {
         "aboutMe": "тест",
         "phone":null,
@@ -40,7 +42,8 @@
         "adress": "тест",
         "isAdmin": false,
         "cookie": "q6dtuhyn12ro",
-        "img": 5
+        "img": 5,
+        "isPart": false
     }, {
         "aboutMe": "..",
         "phone":null,
@@ -54,6 +57,7 @@
         "adress": "..",
         "isAdmin": false,
         "cookie": "k0#t1g@3&^7r",
-        "img": 4
+        "img": 4,
+        "isPart": false
     }]
 }

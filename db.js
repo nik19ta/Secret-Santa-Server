@@ -134,6 +134,8 @@ function get_counts_b() {
     return b_counts - 1
 }
 
+
+
 module.exports.new_user = new_user;
 module.exports.select_user = select_user;
 module.exports.getAllUsers = getAllUsers;

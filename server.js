@@ -11,6 +11,15 @@ const path = require('path');
 const db = require('./db')
 
 
+const csvWriter = require('csv-write-stream');
+const csv = require('csv-parser');
+const fs = require("fs");
+
+let writer = csvWriter({
+    sendHeaders: false
+});
+
+
 const port = 3650;
 
 const randint = (min, max) => {
@@ -108,6 +117,48 @@ app.get('/count', (req, res) => {
     });
 });
 
+app.get('/get_users_in_csv', function (req, res) {
+    obj = db.select_user_cookie(req.cookies['user']);
+        let objs = db.getAllUsers(false)
+
+        writer.pipe(fs.createWriteStream('./data.csv', {
+            flags: 'a'
+        }));    
+
+        console.log(objs);
+
+        for (let i = 0; i < objs.length; i++) {
+            writer.write({
+                aboutMe:objs[i].aboutMe,
+                phone:objs[i].phone,
+                password: objs[i].password,
+                gmail: objs[i].gmail,
+                Name:objs[i].Name,
+                department: objs[i].department,
+                Position: objs[i].Position,
+                branch: objs[i].branch,
+                deliveryDate: objs[i].deliveryDate,
+                adress: objs[i].adress,
+                isAdmin: objs[i].isAdmin,
+                cookie: objs[i].cookie,
+                img: objs[i].img,
+                isPart: objs[i].isPart
+            });
+
+        }
+        writer.end(() => {
+            res.sendFile(path.resolve('./data.csv'));
+        })
+
+        // setTimeout(() => {
+        // }, 6000);
+        // setTimeout(() => {
+        //     fs.unlink('./data.csv', function (err) {
+        //         if (err) return console.log(err);
+        //     });
+
+        // }, 1000)
+});
 
 
 
@@ -126,17 +177,27 @@ app.post('/auto_login', (req, res) => {
 
 });
 
+app.post('/auto_login', (req, res) => {
+    console.log(req.cookies);
+    let user = db.select_user_cookie(req.cookies);
+    console.log(user);
+    if (user != null) res.send({
+        'data': user
+    })
+    else res.send({
+        'data': 'error'
+    })
 
-app.post('/AllData', function (req, res) {
-    try {
-        let result = db.getAllUsers(false);
-        res.send({
-            'success': result
-        });
-    } catch (error) {
-        res.send('error')
-    }
+});
+
+
+app.post('/algoritm', function (req, res) {
+    let result = db.getAllUsers(false);
+    res.send({
+        'success': result
+    });
 })
+
 app.get('/get_count_users', function (req, res) {
     try {
         let result = db.getAllUsers(false);
