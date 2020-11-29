@@ -2,6 +2,7 @@ const fs = require('fs');
 const db = require('./db')
 const filename = "./db.json";
 const encoding = "utf8";
+
 function algoritm() {
     let result = db.getAllUsers(false);
     while (getList(result) > 2) {
@@ -20,6 +21,11 @@ function algoritm() {
             }
         }
     }
+    let file = {
+        "users": result
+    }
+    fs.writeFileSync(filename, JSON.stringify(file));
+
 }
 function check(email, data) {
     let count = 0;
