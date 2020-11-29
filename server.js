@@ -54,7 +54,6 @@ app.post('/add', jsonParser, async function (req, res) {
             gmail: req.body.email,
             Name: info['ФИО'],
             department: info['Фактический департамент'],
-            department: info['Фактический департамент'],
             Position: info['Позиция'],
             branch: info['Фактическое подразделение'],
             deliveryDate: req.body.deliveryDate,
@@ -62,6 +61,8 @@ app.post('/add', jsonParser, async function (req, res) {
             phone: req.body.phone,
             isAdmin: false,
             cookie: cookie,
+            whiteList: cookie,
+            blackList: cookie,
             img: randint(1, 6)
         }
 
@@ -101,6 +102,15 @@ app.get('/all_users', jsonParser, async function (req, res) {
         "data": data
     })
 })
+
+app.get('/get_user_email', jsonParser, async function (req, res) {
+    let data =db.select_user_email(req.query.p)
+    res.send({
+        "data": data
+    })
+})
+
+
 
 app.get('/getcookies', (req, res) => {
     res.send(req.cookies);

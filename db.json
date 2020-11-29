@@ -13,7 +13,10 @@
         "isAdmin": false,
         "cookie": "3!&rt@s9ja04",
         "img": 1,
-        "isPart": false
+        "isPart": false,
+        "blackList": null,
+        "whiteList": null,
+        "status": 0
     }, {
         "aboutMe": "к",
         "phone":null,
@@ -28,7 +31,10 @@
         "isAdmin": false,
         "cookie": "s*jdaq0m2i!u",
         "img": 4,
-        "isPart": false
+        "isPart": false,
+        "blackList": null,
+        "whiteList": null,
+        "status": 0
     }, {
         "aboutMe": "тест",
         "phone":null,
@@ -40,10 +46,13 @@
         "branch": "отдел корпоративной культуры и внутренних коммуникаций",
         "deliveryDate": "2020-12-19",
         "adress": "тест",
-        "isAdmin": false,
+        "isAdmin": true,
         "cookie": "q6dtuhyn12ro",
         "img": 5,
-        "isPart": false
+        "isPart": "eskvortsova@croc.ru",
+        "blackList": null,
+        "whiteList": null,
+        "status": 0
     }, {
         "aboutMe": "..",
         "phone":null,
@@ -58,6 +67,9 @@
         "isAdmin": false,
         "cookie": "k0#t1g@3&^7r",
         "img": 4,
-        "isPart": false
+        "isPart": false,
+        "blackList": null,
+        "whiteList": null,
+        "status": 0
     }]
 }
