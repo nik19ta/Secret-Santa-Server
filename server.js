@@ -10,6 +10,7 @@ const path = require('path');
 
 const db = require('./db')
 
+const algoritm = require('./algoritm')
 
 const csvWriter = require('csv-write-stream');
 const csv = require('csv-parser');
@@ -61,8 +62,9 @@ app.post('/add', jsonParser, async function (req, res) {
             phone: req.body.phone,
             isAdmin: false,
             cookie: cookie,
-            whiteList: cookie,
-            blackList: cookie,
+            whiteList: req.body.wishlist,
+            blackList: req.body.blacklist,
+            isPart: false,
             img: randint(1, 6)
         }
 
@@ -202,10 +204,16 @@ app.post('/auto_login', (req, res) => {
 
 
 app.post('/algoritm', function (req, res) {
-    let result = db.getAllUsers(false);
-    res.send({
-        'success': result
-    });
+    try {
+        algoritm.algoritm();
+        res.send({
+            'status': 'ok'
+        });
+    } catch (error) {
+        res.send({
+            'status': 'error'
+        });
+    }
 })
 
 app.get('/get_count_users', function (req, res) {

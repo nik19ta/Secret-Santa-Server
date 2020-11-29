@@ -1,7 +1,7 @@
 {
     "users": [{
         "aboutMe": "123",
-        "phone":null,
+        "phone": null,
         "password": "UsLi3EW8dMXWxgL",
         "gmail": "bananacorpse@gmail.com",
         "Name": null,
@@ -19,7 +19,7 @@
         "status": 0
     }, {
         "aboutMe": "к",
-        "phone":null,
+        "phone": null,
         "password": "13111999",
         "gmail": "eskvortsova@croc.ru",
         "Name": "Скворцова Екатерина Александровна",
@@ -37,7 +37,7 @@
         "status": 0
     }, {
         "aboutMe": "тест",
-        "phone":null,
+        "phone": null,
         "password": "тест",
         "gmail": "ATrushcheva@croc.ru",
         "Name": "Трущева Анастасия Александровна",
@@ -49,13 +49,13 @@
         "isAdmin": true,
         "cookie": "q6dtuhyn12ro",
         "img": 5,
-        "isPart": "eskvortsova@croc.ru",
+        "isPart": false,
         "blackList": null,
         "whiteList": null,
         "status": 0
     }, {
         "aboutMe": "..",
-        "phone":null,
+        "phone": null,
         "password": "3275",
         "gmail": "nikita@taki.pro",
         "Name": "nikita",
@@ -71,5 +71,39 @@
         "blackList": null,
         "whiteList": null,
         "status": 0
+    }, {
+        "aboutMe": "Немного о себе ",
+        "password": "тест",
+        "gmail": "ATrushcheva@croc.ru",
+        "Name": null,
+        "department": "группа технических менеджеров по мультимедийным системам",
+        "Position": null,
+        "branch": null,
+        "deliveryDate": "2020-12-18-2020-12-18",
+        "adress": "адресс доставки",
+        "phone": "номер телефона ",
+        "isAdmin": false,
+        "cookie": "5tc#qp0#&pyz",
+        "whiteList": "Список желани",
+        "blackList": "то что совсем не нравится ",
+        "img": 3,
+        "isPart": false
+    }, {
+        "aboutMe": "Немного о себе",
+        "password": "тест",
+        "gmail": "test@croc.ru",
+        "Name": null,
+        "department": "группа технических менеджеров по мультимедийным системам",
+        "Position": null,
+        "branch": null,
+        "deliveryDate": "2020-12-18-2020-12-18",
+        "adress": "адресс доставки",
+        "phone": "номер телефона ",
+        "isAdmin": false,
+        "cookie": "5tc#qp0#&pyz",
+        "whiteList": "Список желани",
+        "blackList": "то что совсем не нравится ",
+        "img": 3,
+        "isPart": false
     }]
 }
