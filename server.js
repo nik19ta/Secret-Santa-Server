@@ -65,7 +65,8 @@ app.post('/add', jsonParser, async function (req, res) {
             whiteList: req.body.wishlist,
             blackList: req.body.blacklist,
             isPart: false,
-            img: randint(1, 6)
+            img: randint(1, 6),
+            status: 0
         }
 
         let result = db.new_user(data);
@@ -107,6 +108,12 @@ app.get('/all_users', jsonParser, async function (req, res) {
 
 app.get('/get_user_email', jsonParser, async function (req, res) {
     let data =db.select_user_email(req.query.p)
+    res.send({
+        "data": data
+    })
+})
+app.get('/get_user_giver', jsonParser, async function (req, res) {
+    let data = db.select_giver(req.query.p)
     res.send({
         "data": data
     })

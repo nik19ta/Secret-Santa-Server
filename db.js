@@ -72,6 +72,34 @@ function select_user_email(email) {
 
     return user
 };
+function select_giver(email) {
+    console.log(email);
+    let file = fs.readFileSync(filename, encoding);
+    let data = JSON.parse(file);
+    let user = {};
+    for (let i = 0; i < data['users'].length; i++) {
+        if (data['users'][i].isPart) {
+            if (email.toLowerCase() == data['users'][i].isPart.toLowerCase()) {
+                user.aboutMe = data['users'][i].aboutMe
+                user.phone = data['users'][i].phone
+                user.gmail = data['users'][i].gmail
+                user.Name = data['users'][i].Name
+                user.department = data['users'][i].department
+                user.Position = data['users'][i].Position
+                user.branch = data['users'][i].branch
+                user.adress = data['users'][i].adress
+                user.img = data['users'][i].img
+                user.whiteList = data['users'][i].whiteList
+                user.blackList = data['users'][i].blackList
+                user.deliveryDate = data['users'][i].deliveryDate
+                user.status = data['users'][i].status
+                break
+            }
+        }
+    }
+
+    return user
+};
 function git_info(login, password) {
     let file = fs.readFileSync(filename, encoding);
     let data = JSON.parse(file);
@@ -173,3 +201,4 @@ module.exports.get_counts_d = get_counts_d;
 module.exports.get_counts_b = get_counts_b;
 module.exports.git_info = git_info;
 module.exports.select_user_email = select_user_email;
+module.exports.select_giver = select_giver;

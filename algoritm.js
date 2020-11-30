@@ -12,8 +12,8 @@ function algoritm() {
                         if (check(result[j].gmail, result) < 1) {
                             if (result[i].isPart == false) {
                                 if (result[j].isPart != result[i].gmail) {
-                                    result[i].isPart = result[j].gmail;
-                                    console.log(`Пара: даритель ${result[i].gmail} и получательно ${result[j].gmail}`);            
+                                    result[i].isPart = result[j].gmail;      
+                                    result[i].status = 1;
                                 }
                             }
                         }
@@ -47,7 +47,5 @@ function getList(data) {
     }
     return count
 }
-
-algoritm()
 
 module.exports.algoritm = algoritm;

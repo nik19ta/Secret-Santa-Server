@@ -13,10 +13,10 @@
         "isAdmin": false,
         "cookie": "3!&rt@s9ja04",
         "img": 1,
-        "isPart": false,
+        "isPart": "eskvortsova@croc.ru",
         "blackList": null,
         "whiteList": null,
-        "status": 0
+        "status": 1
     }, {
         "aboutMe": "к",
         "phone": null,
@@ -31,10 +31,10 @@
         "isAdmin": false,
         "cookie": "s*jdaq0m2i!u",
         "img": 4,
-        "isPart": false,
+        "isPart": "nikita@taki.pro",
         "blackList": null,
         "whiteList": null,
-        "status": 0
+        "status": 1
     }, {
         "aboutMe": "тест",
         "phone": null,
@@ -49,10 +49,10 @@
         "isAdmin": true,
         "cookie": "q6dtuhyn12ro",
         "img": 5,
-        "isPart": false,
+        "isPart": "bananacorpse@gmail.com",
         "blackList": null,
         "whiteList": null,
-        "status": 0
+        "status": 1
     }, {
         "aboutMe": "..",
         "phone": null,
@@ -67,10 +67,10 @@
         "isAdmin": false,
         "cookie": "k0#t1g@3&^7r",
         "img": 4,
-        "isPart": false,
+        "isPart": "ATrushcheva@croc.ru",
         "blackList": null,
         "whiteList": null,
-        "status": 0
+        "status": 1
     }, {
         "aboutMe": "Немного о себе ",
         "password": "тест",
@@ -87,6 +87,7 @@
         "whiteList": "Список желани",
         "blackList": "то что совсем не нравится ",
         "img": 3,
+        "status": 0,
         "isPart": false
     }, {
         "aboutMe": "Немного о себе",
@@ -104,6 +105,7 @@
         "whiteList": "Список желани",
         "blackList": "то что совсем не нравится ",
         "img": 3,
+        "status": 0,
         "isPart": false
     }]
 }
