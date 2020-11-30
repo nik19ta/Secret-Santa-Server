@@ -84,6 +84,23 @@ app.post('/add', jsonParser, async function (req, res) {
         res.send('error')
     }
 })
+app.post('/gift_is_ready', jsonParser, async function (req, res) {
+    console.log(req.body);
+        console.log(req.body);
+
+        let data = {
+            name_gift: req.body.name_gift,
+            wish: req.body.wish,
+            email: req.body.email
+        }
+
+        db.new_gift(data);
+        db.edit_user_em(req.body.name_gift, 'status', 2);
+
+        res.send({
+            'status': 'ok',
+        });
+})
 
 app.post('/login', jsonParser, async function (req, res) {
     console.log(req.body);

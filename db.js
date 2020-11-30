@@ -25,6 +25,15 @@ function new_user(user) {
     });
     return true
 }
+function new_gift(user) {
+    fs.readFile(filename, encoding, function (err, data) {
+        if (err) throw err;
+        data = JSON.parse(data);
+        data['gifts'].push(user);
+        fs.writeFileSync(filename, JSON.stringify(data));
+    });
+    return true
+}
 
 function select_user(login, password) {
     let file = fs.readFileSync(filename, encoding);
@@ -111,6 +120,7 @@ function git_info(login, password) {
         }
     }
     return count
+
 };
 function select_user_cookie(cookie) {
     let file = fs.readFileSync(filename, encoding);
@@ -131,6 +141,19 @@ function edit_user(login, password, key, value) {
     let count = 0;
     for (let i = 0; i < data['users'].length; i++) {
         if (login === data['users'][i].login && password === data['users'][i].password) {
+            data['users'][i][key] = value;
+        }
+    }
+    console.log(data);
+    fs.writeFileSync(filename, JSON.stringify(data));
+    return count > 0
+}
+function edit_user_em(email, key, value) {
+    let file = fs.readFileSync(filename, encoding);
+    let data = JSON.parse(file);
+    let count = 0;
+    for (let i = 0; i < data['users'].length; i++) {
+        if (email === data['users'][i].gmail) {
             data['users'][i][key] = value;
         }
     }
@@ -202,3 +225,5 @@ module.exports.get_counts_b = get_counts_b;
 module.exports.git_info = git_info;
 module.exports.select_user_email = select_user_email;
 module.exports.select_giver = select_giver;
+module.exports.edit_user_em = edit_user_em;
+module.exports.new_gift = new_gift;
