@@ -40,12 +40,6 @@ function select_user(login, password) {
     let data = JSON.parse(file);
     let count = 0;
     for (let i = 0; i < data['users'].length; i++) {
-        console.log('========');
-        console.log(data['users'][i].gmail);
-        console.log(login);
-        console.log(data['users'][i].password);
-        console.log(password);
-        console.log('========');
 
 
         if (login == data['users'][i].gmail && password == data['users'][i].password) {
@@ -56,7 +50,6 @@ function select_user(login, password) {
     return count > 0
 };
 function select_user_email(email) {
-    console.log(email);
     let file = fs.readFileSync(filename, encoding);
     let data = JSON.parse(file);
     let user = {};
@@ -82,7 +75,7 @@ function select_user_email(email) {
     return user
 };
 function select_giver(email) {
-    console.log(email);
+    //console.log(email);
     let file = fs.readFileSync(filename, encoding);
     let data = JSON.parse(file);
     let user = {};
@@ -144,7 +137,6 @@ function edit_user(login, password, key, value) {
             data['users'][i][key] = value;
         }
     }
-    console.log(data);
     fs.writeFileSync(filename, JSON.stringify(data));
     return count > 0
 }
@@ -157,7 +149,6 @@ function edit_user_em(email, key, value) {
             data['users'][i][key] = value;
         }
     }
-    console.log(data);
     fs.writeFileSync(filename, JSON.stringify(data));
     return count > 0
 }
@@ -183,7 +174,6 @@ function get_counts_d() {
     let d_ = []
     let d_counts = 0;
     for (let i = 0; i < data['users'].length; i++) {
-        console.log(data['users'][i].department);
         if (d_.indexOf(data['users'][i].department) === -1) {
             d_.push(data['users'][i].department)
             d_counts++
@@ -200,7 +190,6 @@ function get_counts_b() {
     let d_ = []
     let b_counts = 0;
     for (let i = 0; i < data['users'].length; i++) {
-        console.log(data['users'][i].branch);
         if (d_.indexOf(data['users'][i].branch) === -1) {
             d_.push(data['users'][i].branch)
             b_counts++

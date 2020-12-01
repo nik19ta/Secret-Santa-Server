@@ -16,9 +16,6 @@ const csvWriter = require('csv-write-stream');
 const csv = require('csv-parser');
 const fs = require("fs");
 
-let writer = csvWriter({
-    sendHeaders: false
-});
 
 
 const port = 3650;
@@ -86,25 +83,25 @@ app.post('/add', jsonParser, async function (req, res) {
 })
 app.post('/gift_is_ready', jsonParser, async function (req, res) {
     console.log(req.body);
-        console.log(req.body);
+    console.log(req.body);
 
-        let data = {
-            name_gift: req.body.name_gift,
-            wish: req.body.wish,
-            email: req.body.email
-        }
+    let data = {
+        name_gift: req.body.name_gift,
+        wish: req.body.wish,
+        email: req.body.email
+    }
 
-        db.new_gift(data);
-        db.edit_user_em(req.body.name_gift, 'status', 2);
+    db.new_gift(data);
+    db.edit_user_em(req.body.name_gift, 'status', 2);
 
-        res.send({
-            'status': 'ok',
-        });
+    res.send({
+        'status': 'ok',
+    });
 })
 
 app.post('/login', jsonParser, async function (req, res) {
     console.log(req.body);
-    let info=null;
+    let info = null;
     let data = db.select_user(req.body.email, req.body.password)
     if (data) {
         info = db.git_info(req.body.email, req.body.password)
@@ -124,7 +121,7 @@ app.get('/all_users', jsonParser, async function (req, res) {
 })
 
 app.get('/get_user_email', jsonParser, async function (req, res) {
-    let data =db.select_user_email(req.query.p)
+    let data = db.select_user_email(req.query.p)
     res.send({
         "data": data
     })
@@ -155,45 +152,53 @@ app.get('/count', (req, res) => {
 
 app.get('/get_users_in_csv', function (req, res) {
     obj = db.select_user_cookie(req.cookies['user']);
-        let objs = db.getAllUsers(false)
+    let objs = db.getAllUsers(false)
 
-        writer.pipe(fs.createWriteStream('./data.csv', {
-            flags: 'a'
-        }));    
 
-        console.log(objs);
+    writer = csvWriter({
+        headers: [
+            "aboutMe", "phone", "password", "gmail", "Name",
+            "department", "Position", "branch", "gmail", "deliveryDate",
+            "adress", "isAdmin", "img", "isPart", "status",
+        ]
+    });
 
-        for (let i = 0; i < objs.length; i++) {
-            writer.write({
-                aboutMe:objs[i].aboutMe,
-                phone:objs[i].phone,
-                password: objs[i].password,
-                gmail: objs[i].gmail,
-                Name:objs[i].Name,
-                department: objs[i].department,
-                Position: objs[i].Position,
-                branch: objs[i].branch,
-                deliveryDate: objs[i].deliveryDate,
-                adress: objs[i].adress,
-                isAdmin: objs[i].isAdmin,
-                cookie: objs[i].cookie,
-                img: objs[i].img,
-                isPart: objs[i].isPart
-            });
 
-        }
-        writer.end(() => {
+    writer.pipe(fs.createWriteStream('./data.csv', {
+        flags: 'a'
+    }));
+
+    console.log(objs);
+
+    for (let i = 0; i < objs.length; i++) {
+        writer.write({
+            aboutMe: objs[i].aboutMe == null ? 'null' : objs[i].aboutMe,
+            phone: objs[i].phone == null ? 'null' : objs[i].phone,
+            password: objs[i].password == null ? 'null' : objs[i].password,
+            gmail: objs[i].gmail == null ? 'null' : objs[i].gmail,
+            Name: objs[i].Name == null ? 'null' : objs[i].Name,
+            department: objs[i].department == null ? 'null' : objs[i].department,
+            Position: objs[i].Position == null ? 'null' : objs[i].Position,
+            branch: objs[i].branch == null ? 'null' : objs[i].branch,
+            deliveryDate: objs[i].deliveryDate == null ? 'null' : objs[i].deliveryDate,
+            adress: objs[i].adress == null ? 'null' : objs[i].adress,
+            isAdmin: objs[i].isAdmin == null ? 'null' : objs[i].isAdmin,
+            img: objs[i].img == null ? 'null' : objs[i].img,
+            isPart: objs[i].isPart == null ? 'null' : objs[i].isPart,
+            status: objs[i].status == null ? 'null' : objs[i].status
+        });
+
+    }
+    writer.end(() => {
+        setTimeout(() => {
             res.sendFile(path.resolve('./data.csv'));
-        })
-
-        // setTimeout(() => {
-        // }, 6000);
-        // setTimeout(() => {
-        //     fs.unlink('./data.csv', function (err) {
-        //         if (err) return console.log(err);
-        //     });
-
-        // }, 1000)
+            setTimeout(() => {
+                fs.unlink('./data.csv', function (err) {
+                    if (err) return console.log(err);
+                });
+            }, 6000);
+        }, 1000)
+    })
 });
 
 
@@ -259,13 +264,15 @@ app.get('/get_count_users', function (req, res) {
         }
         // for (let i = 0; i < array.length; i++) {
         //     const element = array[i];
-            
+
         // }
         res.send({
             'success': data
         });
     } catch (error) {
-        res.send({'status': 'error'})
+        res.send({
+            'status': 'error'
+        })
     }
 })
 app.post('/count', function (req, res) {
