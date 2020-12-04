@@ -289,9 +289,9 @@ app.post('/get_discount', jsonParser, function (req, res) {
     try {
         let user = db.select_user_email(req.body.email)
 
-        if (user.isCode != false) {
-            db.edit_user_em(req.body.email, "isCode", false);
+        if (user.isCode.length == undefined) {
             let result = db.get_codes(req.body.email);
+            db.edit_user_em(req.body.email, "isCode", result.code);
             console.log(result);
             res.send({
                 'status': true,
@@ -299,9 +299,9 @@ app.post('/get_discount', jsonParser, function (req, res) {
                 'discount': result.discount
             });
         } else {
-                res.send({
-                    'status': false
-                });
+            res.send({
+                'status': user.isCode
+            });
         }
     } catch (error) {
         res.send({
