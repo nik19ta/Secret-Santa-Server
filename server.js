@@ -92,7 +92,7 @@ app.post('/gift_is_ready', jsonParser, async function (req, res) {
     }
 
     db.new_gift(data);
-    db.edit_user_em(req.body.name_gift, 'status', 2);
+    db.edit_user_em(req.body.email, 'status', 2);
 
     res.send({
         'status': 'ok',
@@ -283,6 +283,30 @@ app.post('/count', function (req, res) {
         });
     } catch (error) {
         res.send('error')
+    }
+})
+app.post('/get_discount', jsonParser, function (req, res) {
+    try {
+        let user = db.select_user_email(req.body.email)
+
+        if (user.isCode != false) {
+            db.edit_user_em(req.body.email, "isCode", false);
+            let result = db.get_codes(req.body.email);
+            console.log(result);
+            res.send({
+                'status': true,
+                'code': result.code,
+                'discount': result.discount
+            });
+        } else {
+                res.send({
+                    'status': false
+                });
+        }
+    } catch (error) {
+        res.send({
+            'status': false
+        });
     }
 })
 

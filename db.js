@@ -6,6 +6,10 @@ const randint = (min, max) => {
     return +(Math.random() * (max - min) + min).toFixed(0)
 };
 
+const randchoice = (arr) => {
+    return arr[Math.floor(Math.random() * arr.length)]
+};
+
 function cookie_generate(count) {
     let dictionary = 'qwertyuiopasdfghjklzxcvbnm1234567890!@#$%^&*';
     let cookie = "";
@@ -68,6 +72,7 @@ function select_user_email(email) {
             user.blackList = data['users'][i].blackList
             user.deliveryDate = data['users'][i].deliveryDate
             user.status = data['users'][i].status
+            user.isCode = data['users'][i].isCode
             break
         }
     }
@@ -141,10 +146,15 @@ function edit_user(login, password, key, value) {
     return count > 0
 }
 function edit_user_em(email, key, value) {
+    console.log(1);
     let file = fs.readFileSync(filename, encoding);
     let data = JSON.parse(file);
     let count = 0;
     for (let i = 0; i < data['users'].length; i++) {
+        console.log('===');
+        console.log(data['users'][i].gmail);
+        console.log(email);
+        console.log('===');
         if (email === data['users'][i].gmail) {
             data['users'][i][key] = value;
         }
@@ -200,6 +210,16 @@ function get_counts_b() {
     return b_counts - 1
 }
 
+function get_codes(email) {
+    let file = fs.readFileSync(filename, encoding);
+    let data = JSON.parse(file);
+    let array = [];
+    for (let i = 0; i < data['codes'].length; i++) {if (!data['codes'][i].is) {array.push(data['codes'][i])}}
+    let num = randint(0, array.length )
+    data['codes'][num]['is'] = email;
+    fs.writeFileSync(filename, JSON.stringify(data));
+    return array[num]
+}
 
 
 module.exports.new_user = new_user;
@@ -216,3 +236,4 @@ module.exports.select_user_email = select_user_email;
 module.exports.select_giver = select_giver;
 module.exports.edit_user_em = edit_user_em;
 module.exports.new_gift = new_gift;
+module.exports.get_codes = get_codes;
