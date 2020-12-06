@@ -92,8 +92,24 @@ app.post('/gift_is_ready', jsonParser, async function (req, res) {
     }
 
     db.new_gift(data);
-    db.edit_user_em(req.body.email, 'status', 2);
+    console.log('statusT');
+    db.edit_user_em(req.body.email, 'statusT', true);
 
+    res.send({
+        'status': 'ok',
+    });
+})
+app.post('/status_edit', jsonParser, async function (req, res) {
+    console.log(req.body.count);
+    console.log(req.body.email);
+    db.edit_user_em(req.body.email, 'status', req.body.count);
+    res.send({
+        'status': 'ok',
+    });
+})
+app.post('/ok_gm', jsonParser, async function (req, res) {
+    db.edit_user_em(req.body.email, 'status', 2);
+    db.edit_user_em(req.body.email, 'statusT', false);
     res.send({
         'status': 'ok',
     });
