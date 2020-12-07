@@ -58,7 +58,7 @@ function select_user_email(email) {
     let data = JSON.parse(file);
     let user = {};
     for (let i = 0; i < data['users'].length; i++) {
-        if (email.toLowerCase() == data['users'][i].gmail.toLowerCase()) {
+        if (email.toLowerCase() == data['users'][i]['gmail'].toLowerCase()) {
             user.aboutMe = data['users'][i].aboutMe
             user.phone = data['users'][i].phone
             user.gmail = data['users'][i].gmail

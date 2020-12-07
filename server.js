@@ -39,47 +39,53 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 app.post('/add', jsonParser, async function (req, res) {
-    console.log(req.body);
-    try {
-        let cookie = db.cookie_generate(12);
+
+    if (Object.keys(db.select_user_email(req.body.email)).length != 0) {
+        res.send({'status': 'Такой пользователь уже существует'})
+    } else {
         console.log(req.body);
-
-        let info = get_info_user.select_user('E-mail', req.body.email);
-
-        let data = {
-            aboutMe: req.body.about,
-            password: req.body.password,
-            gmail: req.body.email,
-            Name: info['ФИО'],
-            department: info['Фактический департамент'],
-            Position: info['Позиция'],
-            branch: info['Фактическое подразделение'],
-            deliveryDate: req.body.deliveryDate,
-            adress: req.body.adress,
-            phone: req.body.phone,
-            isAdmin: false,
-            cookie: cookie,
-            whiteList: req.body.wishlist,
-            blackList: req.body.blacklist,
-            isPart: false,
-            img: randint(1, 6),
-            status: 0
-        }
-
-        let result = db.new_user(data);
-        if (result != true) {
+        try {
+            let cookie = db.cookie_generate(12);
+            console.log(req.body);
+    
+            let info = get_info_user.select_user('E-mail', req.body.email);
+    
+            let data = {
+                aboutMe: req.body.about,
+                password: req.body.password,
+                gmail: req.body.email,
+                Name: info['ФИО'],
+                department: info['Фактический департамент'],
+                Position: info['Позиция'],
+                branch: info['Фактическое подразделение'],
+                deliveryDate: req.body.deliveryDate,
+                adress: req.body.adress,
+                phone: req.body.phone,
+                isAdmin: false,
+                cookie: cookie,
+                whiteList: req.body.wishlist,
+                blackList: req.body.blacklist,
+                isPart: false,
+                img: randint(1, 6),
+                status: 0
+            }
+    
+            let result = db.new_user(data);
+            if (result != true) {
+                res.send({
+                    'status': 'error'
+                })
+            }
+            res.cookie("user", cookie);
             res.send({
-                'status': 'error'
-            })
+                'status': 'ok',
+                'data': data
+            });
+        } catch (error) {
+            res.send('error')
         }
-        res.cookie("user", cookie);
-        res.send({
-            'status': 'ok',
-            'data': data
-        });
-    } catch (error) {
-        res.send('error')
     }
+
 })
 app.post('/gift_is_ready', jsonParser, async function (req, res) {
     console.log(req.body);
