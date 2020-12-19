@@ -114,6 +114,9 @@ app.post('/status_edit', jsonParser, async function (req, res) {
     });
 })
 app.post('/ok_gm', jsonParser, async function (req, res) {
+    console.log(req.body.email);
+    console.log(req.body.email);
+    console.log(req.body.email);
     db.edit_user_em(req.body.email, 'status', 2);
     db.edit_user_em(req.body.email, 'statusT', false);
     res.send({
@@ -308,10 +311,10 @@ app.post('/count', function (req, res) {
     }
 })
 app.post('/get_discount', jsonParser, function (req, res) {
-    try {
+    // try {
         let user = db.select_user_email(req.body.email)
 
-        if (user.isCode.length == undefined) {
+        if (!user.isCode) {
             let result = db.get_codes(req.body.email);
             db.edit_user_em(req.body.email, "isCode", result.code);
             console.log(result);
@@ -325,12 +328,23 @@ app.post('/get_discount', jsonParser, function (req, res) {
                 'status': user.isCode
             });
         }
-    } catch (error) {
-        res.send({
-            'status': false
-        });
-    }
+    // } catch (error) {
+    //     res.send({
+    //         'status': false
+    //     });
+    // }
 })
+app.post('/editProf', jsonParser, function (req, res) {
+        db.edit_user_em(req.body.data.gmail, "aboutMe", req.body.data.aboutMe)
+        db.edit_user_em(req.body.data.gmail, "whiteList", req.body.data.wishlist)
+        db.edit_user_em(req.body.data.gmail, "blackList", req.body.data.blackList)
+        db.edit_user_em(req.body.data.gmail, "phone", req.body.data.phone)
+        db.edit_user_em(req.body.data.gmail, "adress", req.body.data.adress)
+        db.edit_user_em(req.body.data.gmail, "deliveryDate", `${req.body.deliveryDate1} - ${req.body.deliveryDate2}`)
+        res.send({'status': true});
+})
+
+
 
 app.listen(port, () => {
     console.log(`server start on port ${port}`);

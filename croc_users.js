@@ -1,8 +1,6 @@
 const fs = require('fs');
 
 function select_user(name, name_) {
-    name = name.toLowerCase()
-    name_ = name.toLowerCase()
     let file = fs.readFileSync("./discharge.json", "utf8");
     let data = JSON.parse(file);
     let user = {
@@ -12,8 +10,10 @@ function select_user(name, name_) {
         'Позиция':null
     };
 
+    let em; 
+
     for (let i = 0; i < data['users'].length; i++) {
-        if (name_ == data['users'][i][name]) {
+        if (name_.toLowerCase() == data['users'][i]['E-mail'].toLowerCase()) {
             user = data['users'][i];
             break
         }
@@ -22,5 +22,5 @@ function select_user(name, name_) {
 };
 
 
-// console.log(select_user('E-mail','PAbakumov@croc.ru'));
+// console.log(select_user('E-mail','pomelnik@croc.ru'));
 module.exports.select_user = select_user;
