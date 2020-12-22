@@ -29,6 +29,15 @@ function new_user(user) {
     });
     return true
 }
+function say_thanks(obj) {
+    fs.readFile('./thanks.json', encoding, function (err, data) {
+        if (err) throw err;
+        data = JSON.parse(data);
+        data['thanks'].push(obj);
+        fs.writeFileSync('./thanks.json', JSON.stringify(data));
+    });
+    return true
+}
 function new_gift(user) {
     fs.readFile(filename, encoding, function (err, data) {
         if (err) throw err;
@@ -237,3 +246,4 @@ module.exports.select_giver = select_giver;
 module.exports.edit_user_em = edit_user_em;
 module.exports.new_gift = new_gift;
 module.exports.get_codes = get_codes;
+module.exports.say_thanks = say_thanks;

@@ -16,7 +16,8 @@
         "blackList": "нет такого",
         "isPart": "mlevshenko@croc.ru",
         "img": 2,
-        "status": 1
+        "status": 2,
+        "statusT": false
     }, {
         "aboutMe": "спорт, воллейбол",
         "password": "doW9G26Kj09QKme",
@@ -75,7 +76,8 @@
         "isPart": "SKhidirova@croc.ru",
         "img": 2,
         "status": 4,
-        "statusT": false
+        "statusT": false,
+        "isCode": "599701"
     }, {
         "aboutMe": "Люблю животных, уютные вечера в кругу друзей, но также и люблю побыть одна с чашкой чая и книгой. Занимаюсь стретчингом. ",
         "password": "I89689609413iii",
@@ -93,7 +95,7 @@
         "blackList": "Зерновой кофе, так и не завела себе кофемолку( ",
         "isPart": "nzharnikova@croc.ru",
         "img": 3,
-        "status": 2,
+        "status": 4,
         "statusT": false,
         "isCode": "239865"
     }, {
@@ -113,7 +115,9 @@
         "blackList": "кофе",
         "isPart": "amakhankin@croc.ru",
         "img": 5,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "557810"
     }, {
         "aboutMe": "Люблю всякие головоломки, настолки",
         "password": "Panda0890",
@@ -151,7 +155,9 @@
         "blackList": "ароматические свечи",
         "isPart": "elfilippova@croc.ru",
         "img": 6,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "733793"
     }, {
         "aboutMe": "@jonsiss инстаграм, лублю путешествия, книги, спорт, музыку",
         "password": "Chicony20002000",
@@ -189,7 +195,7 @@
         "blackList": "чайники и старые утюги ;)",
         "isPart": "NaOsipova@croc.ru",
         "img": 5,
-        "status": 2,
+        "status": 4,
         "statusT": false,
         "isCode": "637914"
     }, {
@@ -228,7 +234,9 @@
         "blackList": "Сертификаты",
         "isPart": "ypiskunova@croc.ru",
         "img": 3,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "812491"
     }, {
         "aboutMe": "Люблю смешные, трешовые и неожиданные подарки) Не готова ограничивать хоть в чём-либо, буду рада любому подарку от души :))",
         "password": "+79995360926",
@@ -246,7 +254,8 @@
         "isPart": "pomelnik@croc.ru",
         "img": 5,
         "status": 2,
-        "statusT": false
+        "statusT": false,
+        "isCode": "255541"
     }, {
         "aboutMe": "Хожу на фитнес, учу португальский язык",
         "password": "Gjkbyj4rf",
@@ -284,8 +293,9 @@
         "blackList": "-",
         "isPart": "akornakova@croc.ru",
         "img": 3,
-        "status": 2,
-        "statusT": false
+        "status": 4,
+        "statusT": false,
+        "isCode": "467917"
     }, {
         "aboutMe": "Увлекаюсь шахматами, волейболом, рок-музыкой, настолками и компьютерными играми",
         "password": "89104212468Q2w3",
@@ -303,8 +313,9 @@
         "blackList": "нет такого",
         "isPart": "ybessonova@croc.ru",
         "img": 2,
-        "status": 2,
-        "statusT": false
+        "status": 4,
+        "statusT": false,
+        "isCode": "158258"
     }, {
         "aboutMe": "Юля, 19, совсем недавно в команде, но очень надеюсь здесь остаться на подольше",
         "password": "zxcmnb123",
@@ -322,8 +333,8 @@
         "blackList": "Вещи для декора",
         "isPart": "GeSmirnov@croc.ru",
         "img": 4,
-        "status": 1,
-        "statusT": true
+        "status": 2,
+        "statusT": false
     }, {
         "aboutMe": "Привет! В настоящий момент учусь играть на гитаре. Люблю активный отдых в Москве. Увлечен ремонтом в квартире. Занимаюсь моушн дизайном на уровне новичка",
         "password": "Pops011539",
@@ -341,7 +352,7 @@
         "blackList": "Книги и одежда. Для этого есть свои люди)",
         "isPart": "abashveev@croc.ru",
         "img": 3,
-        "status": 2,
+        "status": 4,
         "statusT": false
     }, {
         "aboutMe": "Днём обычный инженер, а ночью сплю",
@@ -400,7 +411,9 @@
         "blackList": "Крема/косметика",
         "isPart": "talekseenok@croc.ru",
         "img": 1,
-        "status": 1
+        "status": 4,
+        "statusT": false,
+        "isCode": "886198"
     }, {
         "aboutMe": "Люблю - путешествия, горные лыжи, коньки, ролики, настольные игры, квесты, театры и в целом не сидеть на попе ровно",
         "password": "rena95",
@@ -417,7 +430,8 @@
         "blackList": "Что-то, что будет просто стоять на полке",
         "isPart": "EVasina@croc.ru",
         "img": 4,
-        "status": 1
+        "status": 1,
+        "statusT": true
     }, {
         "aboutMe": "да что тут скажешь заполняю форму третий раз ",
         "password": "123qaz",
@@ -454,7 +468,9 @@
         "blackList": "То, что будет пылиться на полке",
         "isPart": "rnurkaeva@croc.ru",
         "img": 6,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "267012"
     }, {
         "aboutMe": "Dear Santa, я люблю Новый Год! В этом году список моих увлечение немного изменился. Я все так же люблю путешествовать (в этом году пришлось по РФ кататься), люблю ручной труд (рисую маслом, делаю украшения из бисера, раскрашиваю картины по номерам, обычно мои увлечения сменяются очень быстро). Из нового: увлекалась декором дома и ремонтом (тк переехала недели две назад). ",
         "password": "Bulletproof15",
@@ -471,7 +487,9 @@
         "blackList": "Можно не дарить книгу?) читать люблю, но в очереди 20 книг, которые надо осилить.",
         "isPart": "aefanova@croc.ru",
         "img": 4,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "177602"
     }, {
         "aboutMe": "Меня зовут Аня. Люблю танцы, походы и горы. В свободное время читаю фэнтези ",
         "password": "Ef121Ana49Nab223",
@@ -489,7 +507,7 @@
         "blackList": "безделушки",
         "isPart": "agolneva@croc.ru",
         "img": 1,
-        "status": 2,
+        "status": 4,
         "statusT": false,
         "isCode": "908259"
     }, {
@@ -508,8 +526,8 @@
         "blackList": "",
         "isPart": "KRakhimova@croc.ru",
         "img": 4,
-        "status": 2,
-        "statusT": false
+        "status": 4,
+        "statusT": true
     }, {
         "aboutMe": "Люблю книги по психологии, настолки и декорировать дом",
         "password": "uthwey1993",
@@ -545,7 +563,9 @@
         "blackList": "",
         "isPart": "mazakharova@croc.ru",
         "img": 6,
-        "status": 1
+        "status": 4,
+        "statusT": false,
+        "isCode": "788456"
     }, {
         "aboutMe": "Хорошо найти радости в мелочах",
         "password": "D111111d",
@@ -564,7 +584,8 @@
         "isPart": "tbelyakova@croc.ru",
         "img": 4,
         "status": 2,
-        "statusT": false
+        "statusT": false,
+        "isCode": "177602"
     }, {
         "aboutMe": "Я безумно люблю игрушки:)",
         "password": "Bliz23153018inda23153018",
@@ -573,7 +594,7 @@
         "department": "Департамент внутренней автоматизации",
         "Position": "Младший инженер-тестировщик",
         "branch": "группа тестировщиков",
-        "deliveryDate": "2020-12-14 - 2020-12-21",
+        "deliveryDate": "2020-12-18 - 2020-12-21",
         "adress": "улица Петрозаводская, 9к1, 75",
         "phone": "89153017019",
         "isAdmin": false,
@@ -602,7 +623,7 @@
         "blackList": "",
         "isPart": "MOvchinnikovaLazareva@croc.ru",
         "img": 2,
-        "status": 2,
+        "status": 4,
         "statusT": false,
         "isCode": "646616"
     }, {
@@ -631,7 +652,7 @@
         "department": "Департамент разработки программного обеспечения",
         "Position": "Младший системный аналитик",
         "branch": "Санкт-Петербург",
-        "deliveryDate": "2020-12-12-2020-12-21",
+        "deliveryDate": " - ",
         "adress": "г. Санкт-Петербург, Комендантский проспект д.21 корп.1, квартира 3",
         "phone": "+79510541330",
         "isAdmin": false,
@@ -640,7 +661,8 @@
         "blackList": "Не люблю острое",
         "isPart": "art@croc.ru",
         "img": 4,
-        "status": 1
+        "status": 2,
+        "statusT": false
     }, {
         "aboutMe": "Я живу в Нижнем Новгороде, работаю в КРОКе 5 лет. У меня есть маленький ребёнок (для него Новый год и День рождения этот 1 и тот же день). Жена тоже работает в КРОКе, сейчас в декрете. Я люблю читать. Из последнего - Институт, Безмолвный пациент. Вечерами смотрим сериалы и планируем ремонт",
         "password": "242252CC495ba000",
@@ -658,7 +680,9 @@
         "blackList": "Статуэтки, шкатулочки, открыточки",
         "isPart": "DmiIvanov@croc.ru",
         "img": 5,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "829241"
     }, {
         "aboutMe": "Сейчас увлечен изучением английского и прокачкой профессиональных навыков",
         "password": "2E880iAL",
@@ -676,7 +700,9 @@
         "blackList": "Не нравятся пылесборники типа шара со снегом и тому подобных штук ",
         "isPart": "mkan@croc.ru",
         "img": 3,
-        "status": 1
+        "status": 4,
+        "statusT": false,
+        "isCode": "398425"
     }, {
         "aboutMe": "Маша, консультант по внедрению бизнес-приложений. Люблю гуманитарные науки, мировое искусство, хорошие книги, рукоделие и кошек :). В Кроке чуть меньше, чем существует удаленка, вживую видела только несколько коллег на собеседовании. Буду рада, если расскажешь о себе, приложишь фоточку себя/котов/офиса, а то как-то грустно не знать никого в компании, кроме проектной команды :)",
         "password": "podarochekotkolleg",
@@ -694,8 +720,9 @@
         "blackList": "Кофе, алкоголь, сыры/колбасы, блестящее и шуршащее",
         "isPart": "dradina@croc.ru",
         "img": 3,
-        "status": 2,
-        "statusT": false
+        "status": 4,
+        "statusT": false,
+        "isCode": "896411"
     }, {
         "aboutMe": "Большой теннис, сноуборд, хайкинг",
         "password": "integral",
@@ -714,7 +741,8 @@
         "isPart": "KKamenyuk@croc.ru",
         "img": 5,
         "status": 2,
-        "statusT": false
+        "statusT": false,
+        "isCode": "599701"
     }, {
         "aboutMe": "Меня зовут Ксюша, мне 19 лет. Люблю петь, стараюсь находить время на занятия йогой. Нравится тематика космоса. ",
         "password": "3766469668xxxxX",
@@ -750,7 +778,9 @@
         "blackList": "",
         "isPart": "itarkhova@croc.ru",
         "img": 3,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "423647"
     }, {
         "aboutMe": "Люблю путешествовать, крафтить что-нибудь руками,  изучаю программирование, люблю покурить кальян, всякие гаджеты, иногда делаю их сам.",
         "password": "D89272567875q",
@@ -768,7 +798,8 @@
         "blackList": "",
         "isPart": "Amushinskaya@croc.ru",
         "img": 1,
-        "status": 1
+        "status": 1,
+        "statusT": true
     }, {
         "aboutMe": "Как хобби занимаюсь рукоделием,люблю животных",
         "password": "Superwholockmcr200899",
@@ -786,7 +817,8 @@
         "blackList": "Буду рада всему)",
         "isPart": "dpanteleev@croc.ru",
         "img": 6,
-        "status": 1
+        "status": 2,
+        "statusT": false
     }, {
         "aboutMe": "нравится чтение антиутопий и утопий, кино конечно же и путешествия, а также дайвинг",
         "password": "25061999",
@@ -804,7 +836,8 @@
         "blackList": "",
         "isPart": "DKadriya@croc.ru",
         "img": 4,
-        "status": 1
+        "status": 1,
+        "statusT": true
     }, {
         "aboutMe": "Admin",
         "password": "Sekret0011",
@@ -866,7 +899,7 @@
         "department": null,
         "Position": null,
         "branch": null,
-        "deliveryDate": "2020-12-12-2020-12-21",
+        "deliveryDate": "2020-12-21 - ",
         "adress": "Волочаевская 5,к3",
         "phone": "89625912185",
         "isAdmin": false,
@@ -875,7 +908,8 @@
         "blackList": "Ничего не делать",
         "isPart": "VLeskova@croc.ru",
         "img": 4,
-        "status": 1
+        "status": 2,
+        "statusT": false
     }, {
         "aboutMe": "характер нордический, выдержанный",
         "password": "352368Liberalabc",
@@ -913,7 +947,8 @@
         "blackList": "Светлое Пиво и Лакрица",
         "isPart": "aleemelyanov@croc.ru",
         "img": 4,
-        "status": 1
+        "status": 2,
+        "statusT": false
     }, {
         "aboutMe": "Инженер, художник, музыкант",
         "password": "M61912841n170703",
@@ -922,16 +957,18 @@
         "department": "Департамент вычислительных систем",
         "Position": "Инженер-диспетчер",
         "branch": "группа поддержки и эксплуатации систем в ЦОД",
-        "deliveryDate": "2020-12-12 - 2020-12-21",
+        "deliveryDate": " - ",
         "adress": "г.Москва, ул.Луховицкая, д.6",
         "phone": "+79779010053",
         "isAdmin": false,
         "cookie": "**#qfprfymsx",
-        "whiteList": "USB-хаб, большой набор отвёрток, внешний накопитель",
-        "blackList": "Никакой одежды :)",
+        "whiteList": "Большой набор отвёрток, внешний накопитель",
+        "blackList": "Никакой одежды и еды :)",
         "isPart": "TShashkina@croc.ru",
         "img": 5,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "205141"
     }, {
         "aboutMe": "Люблю читать и смотреть фэнтези, вышивать крестиком)) и гулять с собакой",
         "password": "ZXC123zxcasdqwe",
@@ -968,7 +1005,8 @@
         "isPart": "KMatvienko@croc.ru",
         "img": 3,
         "status": 2,
-        "statusT": false
+        "statusT": false,
+        "isCode": "205141"
     }, {
         "aboutMe": "Люблю новый год",
         "password": "m110110a",
@@ -986,7 +1024,8 @@
         "blackList": "уголь :)",
         "isPart": "NUstinova@croc.ru",
         "img": 5,
-        "status": 1
+        "status": 2,
+        "statusT": true
     }, {
         "aboutMe": "Rtureyskaya@croc.ru",
         "password": "D1111111111111d",
@@ -1023,7 +1062,9 @@
         "blackList": "все что касается парфюмерии, пен для бритья и носков (отправь мне их пожалуйста на 23 февраля), сертификатов и промо кодов на доставку еды",
         "isPart": "Rtureyskaya@croc.ru",
         "img": 6,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "788456"
     }, {
         "aboutMe": "наверное, все по стандарту) люблю развиваться интеллектуально, читать классику, читать Мураками, давать шанс современной мотивирующей литературе))) биатлон и рок-концерты тож в сердечке ))",
         "password": "E123456789098765e",
@@ -1076,7 +1117,9 @@
         "blackList": "Книги, новогодние украшения",
         "isPart": "TAkazhanov@croc.ru",
         "img": 4,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "975316"
     }, {
         "aboutMe": "Айтишник :)",
         "password": "Qewrty23",
@@ -1112,8 +1155,9 @@
         "blackList": "Фигурки, елочные игрушки и все, что стоит на полках без особой цели",
         "isPart": "salekseev@croc.ru",
         "img": 3,
-        "status": 1,
-        "statusT": true
+        "status": 2,
+        "statusT": false,
+        "isCode": "395750"
     }, {
         "aboutMe": "Увлекаюсь граф. дизайном, играми, Японией (и немного аниме, да). ",
         "password": "AamO83651111111",
@@ -1188,7 +1232,8 @@
         "blackList": "Изюм",
         "isPart": "sebarabashin@croc.ru",
         "img": 4,
-        "status": 1
+        "status": 1,
+        "statusT": true
     }, {
         "aboutMe": "Люблю ходить в кино, потому что дома смотрю только сериалы. Училась в музыкальной школе (домра), но кроме классики слушаю также музыку из Бронкса)) и Монатика. Увлекаюсь историей, в подростковом возрасте читала мемуары и биографии лидеров Французской революции и хотела поступить на истфак.  В детстве мечтала быть пиратом или космонавтом. Сменила кучу секций и хобби, но пока не добралась до фехтования. Люблю уток и иногда шучу, что уеду в деревню разводить птиц)) Мечтаю о бигле или шпице. Под Новый год всегда пишу списки желаний, подвожу итоги года (по чеклистам или ежедневникам от 365 done). Кофеиновый торчок (пью до 5 чашек в день) и сова. Обожаю гулять (особенно у воды).",
         "password": "1409DigitalQueen0407",
@@ -1223,7 +1268,8 @@
         "blackList": "Классическая литература (её и так очень много) / Горький шоколад ",
         "isPart": "YSashnikova@croc.ru",
         "img": 1,
-        "status": 1
+        "status": 2,
+        "statusT": false
     }, {
         "aboutMe": "Люблю путешествия, прогулки, интересуюсь автомобилями и историей моды",
         "password": "Qz1tn53op",
@@ -1241,7 +1287,8 @@
         "blackList": "Не люблю то, что просто стоит без дела на полке, например, статуэтки, подсвечники. Я за функциональность",
         "isPart": "AVolkova@croc.ru",
         "img": 6,
-        "status": 1
+        "status": 1,
+        "statusT": true
     }, {
         "aboutMe": "Люблю работать, писать музыку, перемещаться в пространстве, бадминтон, сноуборд",
         "password": "sozveh-jedwe2-hucdaH",
@@ -1385,7 +1432,9 @@
         "blackList": "Алкоголь, шоколад с алкоголем. Не хотелось бы получить предмет интерьера или парфюмерию.",
         "isPart": "lmusarev@croc.ru",
         "img": 2,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "738234"
     }, {
         "aboutMe": "люблю спорт и себя:), планирую делать ремонт",
         "password": "НЕОДИНДОМА",
@@ -1423,7 +1472,8 @@
         "blackList": "-",
         "isPart": "YSenyukova@croc.ru",
         "img": 2,
-        "status": 1
+        "status": 2,
+        "statusT": false
     }, {
         "aboutMe": "",
         "password": "НЕОДИНДОМА",
@@ -1481,7 +1531,8 @@
         "blackList": "",
         "isPart": "Ebasyuk@croc.ru",
         "img": 4,
-        "status": 1
+        "status": 2,
+        "statusT": false
     }, {
         "aboutMe": "устала от 2020",
         "password": "Gidro011219941234",
@@ -1516,7 +1567,8 @@
         "blackList": "",
         "isPart": "angavrilova@croc.ru",
         "img": 5,
-        "status": 1
+        "status": 2,
+        "statusT": false
     }, {
         "aboutMe": "Люблю создавать уют дома, читать интересные книги, пить вкусный чай и кулинарить",
         "password": "r1111111111111R",
@@ -1534,7 +1586,9 @@
         "blackList": "Подарки без души:)",
         "isPart": "KDegtyareva@croc.ru",
         "img": 2,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "599701"
     }, {
         "aboutMe": "Я обожаю готовить (особенно на живом огне) и люблю активный отдых (катаюсь на сноуборде и горных лыжах), люблю проводить вечера в компании близких с бокалом вина :)",
         "password": "89163225939Maruska",
@@ -1553,7 +1607,8 @@
         "isPart": "mlob@croc.ru",
         "img": 2,
         "status": 2,
-        "statusT": false
+        "statusT": false,
+        "isCode": "491624"
     }, {
         "aboutMe": "Люблю читать научную фантастику, хорошее кино, путешествия, сноуборд.",
         "password": "plplplplplplpl0)",
@@ -1605,7 +1660,9 @@
         "blackList": "-",
         "isPart": "Epopkova@croc.ru",
         "img": 2,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "682300"
     }, {
         "aboutMe": "Если бы меня спросили: \"Что ты производишь, я бы ответила - идеи\". Если бы у меня спросили \"Какой на твой взгляд вопрос самый показательный?\", я бы ответила - \"Что ты производишь?\"",
         "password": "1111",
@@ -1641,7 +1698,9 @@
         "blackList": "Главное, чтобы это была не рыба",
         "isPart": "yvodenko@croc.ru",
         "img": 3,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "158258"
     }, {
         "aboutMe": "Люблю танцы, фотографию (новое увлечение), научпоп, английский и уютные посиделки с друзьями",
         "password": "D1111111111111d",
@@ -1735,7 +1794,8 @@
         "blackList": "Пластик)",
         "isPart": "SPogrebnyak@croc.ru",
         "img": 4,
-        "status": 1
+        "status": 2,
+        "statusT": false
     }, {
         "aboutMe": "Люблю путешествовать, читать, настолки, играю в покер",
         "password": "L123456789098765k",
@@ -1753,7 +1813,8 @@
         "blackList": "Посуда :)) ее уже очень много",
         "isPart": "vshuvalova@croc.ru",
         "img": 1,
-        "status": 1
+        "status": 1,
+        "statusT": true
     }, {
         "aboutMe": "Хобби: Корейская культура, корейская косметика, танцы, фотография",
         "password": "Fyfcnfcbz1",
@@ -1771,7 +1832,9 @@
         "blackList": "Непрактичные вещи, типа интерьерных украшений :)",
         "isPart": "NKholopova@croc.ru",
         "img": 1,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "889910"
     }, {
         "aboutMe": "",
         "password": "22ss44hca8",
@@ -1789,7 +1852,9 @@
         "blackList": "Конфеты, косметика, мыльные принадлежности",
         "isPart": "anasmirnov@croc.ru",
         "img": 1,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "599701"
     }, {
         "aboutMe": "Если читать - классика и научная фантастика, если смотреть - артхаус/фестивальное кино/сериалы, а ещё вино/кофе, настольные игры) ",
         "password": "Зукаусе01",
@@ -1863,7 +1928,8 @@
         "blackList": "бесполезные нефункциональные вещи (типо статуэток)",
         "isPart": "ekaydashova@croc.ru",
         "img": 3,
-        "status": 1
+        "status": 2,
+        "statusT": false
     }, {
         "aboutMe": "Люблю фотографировать, катаюсь на лонгборде, велосипеде и сноуборде. ",
         "password": "qwerty12345",
@@ -1917,7 +1983,9 @@
         "blackList": "Бутылочки, баночки, шампуни и все в этом роде)",
         "isPart": "2060@croc.ru",
         "img": 6,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "794356"
     }, {
         "aboutMe": "Я очень увлеченный человек, и очень много люблю делать руками - создавать, улучшать, креативить, готовить вкусняшку, украшать, делать место вокруг себя красивым. А сейчас у меня идет полный ремонт и я в ожидании того, как буду украшать все в квартире к новому году! Очень люблю все красивенькое как на столе, в интерьере, так и вокруг в атмосфере.",
         "password": "110142125e",
@@ -1954,7 +2022,8 @@
         "blackList": "Сладости, носки и пена для бритья))",
         "isPart": "echagina@croc.ru",
         "img": 3,
-        "status": 1
+        "status": 2,
+        "statusT": false
     }, {
         "aboutMe": "Обыкновенный",
         "password": "7777777777777Ll",
@@ -2009,7 +2078,8 @@
         "blackList": "",
         "isPart": "aganovskaya@croc.ru",
         "img": 2,
-        "status": 1
+        "status": 2,
+        "statusT": false
     }, {
         "aboutMe": "",
         "password": "Password1111111",
@@ -2027,7 +2097,9 @@
         "blackList": "",
         "isPart": "2096@croc.ru",
         "img": 5,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "812491"
     }, {
         "aboutMe": "Практичность, логика, но женская)",
         "password": "23101974!",
@@ -2045,7 +2117,9 @@
         "blackList": "приколы, сувениры-пылесборники ",
         "isPart": "alakimova@croc.ru",
         "img": 3,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "452844"
     }, {
         "aboutMe": "Рисую смолой, занимаюсь серфингом, мечтаю о собаке",
         "password": "Mars1marsKzkz11",
@@ -2153,12 +2227,12 @@
         "department": "Департамент маркетинга",
         "Position": "Специалист",
         "branch": "операционный маркетинг",
-        "deliveryDate": " - ",
+        "deliveryDate": " - 2020-12-21",
         "adress": "МО, г. Железнодорожный, микрорайон Ольгино,  шестая улица, дом 5, кв. 131",
         "phone": "+79268773653",
         "isAdmin": false,
         "cookie": "mjs4r7*i8gg9",
-        "whiteList": "Свитшот хs, термокружка, коврик для йоги, кружка, коврик для мышки, карту памяти на фотоаппарат",
+        "whiteList": "Термокружка, коврик для йоги, кружка, коврик для мышки, карту памяти на фотоаппарат, сладости, книгу, что-то создающее новогоднее настроение, кофе, чай...",
         "blackList": "",
         "isPart": "ESandreykina@croc.ru",
         "img": 4,
@@ -2181,7 +2255,8 @@
         "blackList": "Алкоголь ",
         "isPart": "AMikheeva@croc.ru",
         "img": 5,
-        "status": 1
+        "status": 2,
+        "statusT": false
     }, {
         "aboutMe": "Звездные войны, вино, сноуборд, кулинария, умный дом",
         "password": "croc2020",
@@ -2199,7 +2274,9 @@
         "blackList": "На всякий случай у меня уже есть книга Wine Folly (отличная, но есть), есть автоматизированный открыватель винных пробок) Никакого лего по ЗВ нет.",
         "isPart": "dsyutkin@croc.ru",
         "img": 2,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "599701"
     }, {
         "aboutMe": "Хочу отпариватель)",
         "password": "QWERTY1234567890",
@@ -2254,7 +2331,8 @@
         "isPart": "SGorozhankina@croc.ru",
         "img": 5,
         "status": 2,
-        "statusT": false
+        "statusT": false,
+        "isCode": "508357"
     }, {
         "aboutMe": "люблю рисовать, спорт и йогу, путешествовать и работать )",
         "password": "Скщс2021",
@@ -2272,7 +2350,8 @@
         "blackList": "не хочу новогодних сувениров (:",
         "isPart": "AZheleznova@croc.ru",
         "img": 6,
-        "status": 1
+        "status": 2,
+        "statusT": false
     }, {
         "aboutMe": "Баскетбол, машины, видеоигры",
         "password": "Witsantacroc2020",
@@ -2345,7 +2424,9 @@
         "blackList": "не хочу кружку, планер, календарь :)",
         "isPart": "ashmakova@croc.ru",
         "img": 5,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "788456"
     }, {
         "aboutMe": "Меня сопровождает только творчество: работа, учеба и хобби — все это процесс создания чего-то креативного",
         "password": "qwitter",
@@ -2400,7 +2481,8 @@
         "blackList": "Отсутствует, буду рад любому презенту :)",
         "isPart": "OVoloshchenko@croc.ru",
         "img": 2,
-        "status": 1
+        "status": 2,
+        "statusT": false
     }, {
         "aboutMe": "Люблю читать книги, пить чай и готовить сладости)",
         "password": "Forogonda2101",
@@ -2409,7 +2491,7 @@
         "department": "Департамент бизнес-приложений",
         "Position": "Стажер",
         "branch": "группа консультантов по внедрению бизнес-приложений",
-        "deliveryDate": "2020-12-18-2020-12-21",
+        "deliveryDate": "2020-12-21 - 2020-12-26",
         "adress": "Москва, Луговой проезд, 12к2, 332",
         "phone": "89647844435",
         "isAdmin": false,
@@ -2427,7 +2509,7 @@
         "department": "Департамент бизнес-приложений",
         "Position": "Младший консультант по внедрению бизнес-приложений",
         "branch": "группа консультантов по хранилищам данных и ETL",
-        "deliveryDate": "2020-12-18 - 2020-12-21",
+        "deliveryDate": " - ",
         "adress": "Москва, улица Свободы, дом 63, квартира 163",
         "phone": "89017451565",
         "isAdmin": false,
@@ -2436,7 +2518,9 @@
         "blackList": "Жареный лук совсем не люблю, а ещё цветную капусту и брокколи",
         "isPart": "LTrunina@croc.ru",
         "img": 5,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "313933"
     }, {
         "aboutMe": "Люблю природу, горные лыжи, оптимист",
         "password": "Globus444Global",
@@ -2471,7 +2555,9 @@
         "blackList": "Не нравятся всякие безделушки, статуэтки, подсвечники и пр.",
         "isPart": "mispusinov@croc.ru",
         "img": 5,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "398425"
     }, {
         "aboutMe": "Давай знакомиться, Тайный Санта) Меня зовут Аня, я люблю гулять, просто выходить на улицу, включать в наушниках музыку и идти, обожаю собираться в компании близких мне людей, играть в настольные игры и пить чай из красивых чашечек с блюдцами. Хобби... наверное, это упаковка всего, начиная от разработки дизайна в фотошопе макета, до самого процесса упаковывания.",
         "password": "K0rnilovich1809@",
@@ -2490,7 +2576,8 @@
         "isPart": "vsafonova@croc.ru",
         "img": 4,
         "status": 2,
-        "statusT": false
+        "statusT": false,
+        "isCode": "908259"
     }, {
         "aboutMe": " в этом сезоне планировал встать на сноуборд, люблю настольные игры :)",
         "password": "MMisha89162457988",
@@ -2508,7 +2595,9 @@
         "blackList": "не знаю, возможен ли такой сюрприз, но у меня аллергия на животных :)",
         "isPart": "AKornilovich@croc.ru",
         "img": 2,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "630470"
     }, {
         "aboutMe": "",
         "password": "1Gus_Rabotyaga!",
@@ -2526,7 +2615,9 @@
         "blackList": "Если задумаешь подарить что-то из одежды - учти, что я шкаш  ростом под 2 метра и весом под 100 с ногой 45-го размера) ",
         "isPart": "mmukhin@croc.ru",
         "img": 3,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "556839"
     }, {
         "aboutMe": "Хобби, интересы - изучения иностранных языков, чтение книг (исторические),  бисероплетение, спорт(стрельба из лука)",
         "password": "OWA135_hhh^e!19",
@@ -2562,7 +2653,9 @@
         "blackList": "Синтетические ткани :<",
         "isPart": "IMaksimova@croc.ru",
         "img": 3,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "672338"
     }, {
         "aboutMe": "Интересуюсь искусством и архитектурой, люблю путешествовать",
         "password": "Kr235904",
@@ -2580,7 +2673,9 @@
         "blackList": "Шоколадные фигурки :)",
         "isPart": "danikolaev@croc.ru",
         "img": 5,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "isCode": "829241"
     }, {
         "aboutMe": "Я люблю мягкие игрушки, хорошие книги (психология/романы)",
         "password": "Qwerty1234567890",
@@ -2674,11 +2769,11 @@
         "Name": "Хабарова Полина Михайловна",
         "department": "Администрация",
         "Position": "HR-директор/Chief Transformation Officer",
-        "deliveryDate": "-",
-        "adress": "",
+        "deliveryDate": "2020-12-21 - 2020-12-21",
+        "adress": "офис крок ",
         "isAdmin": false,
         "cookie": "8^1n!&3gyueu",
-        "whiteList": "",
+        "whiteList": "люблю всё красивое! меня точно порадует елочная игрушка, которая всегда будет напоминать про тебя ",
         "blackList": "",
         "isPart": "VTantzorov@croc.ru",
         "img": 4,
@@ -2690,15 +2785,16 @@
         "Name": "Иванов Андрей Валерьевич",
         "department": "Департамент внутренней автоматизации",
         "Position": "Директор  по ИТ",
-        "deliveryDate": "-",
-        "adress": "",
+        "deliveryDate": " - ",
+        "adress": "офис",
         "isAdmin": false,
         "cookie": "ogz#u5x4bk*5",
-        "whiteList": "",
+        "whiteList": "на твой вкус",
         "blackList": "",
         "isPart": "EVolkovskaya@croc.ru",
         "img": 4,
-        "status": 1
+        "status": 1,
+        "phone": "+79265810954"
     }, {
         "aboutMe": "",
         "password": "2300",
@@ -2706,15 +2802,16 @@
         "Name": "Космовская Людмила Анатольевна",
         "department": "Администрация",
         "Position": "Директор  департамента",
-        "deliveryDate": "-",
-        "adress": "",
+        "deliveryDate": " - ",
+        "adress": "г.Москва, ул. Советской Армии. д.6 кв.65",
         "isAdmin": false,
         "cookie": "*%oog!5^j523",
-        "whiteList": "",
-        "blackList": "",
+        "whiteList": "Елочная игрушка или шампанское или ежедневник ",
+        "blackList": "мягкие игрушки",
         "isPart": "irubtzov@croc.ru",
         "img": 4,
-        "status": 1
+        "status": 1,
+        "phone": "+79859216800"
     }, {
         "aboutMe": "",
         "password": "1212",
@@ -2732,21 +2829,22 @@
         "img": 4,
         "status": 1
     }, {
-        "aboutMe": "",
+        "aboutMe": "Даже не знаю, что и сказать...",
         "password": "1910",
         "gmail": "IOmehin@croc.ru",
         "Name": "Омехин Илья Александрович",
         "department": "Департамент разработки программного обеспечения",
         "Position": "Директор  по разработке ПО",
-        "deliveryDate": "-",
-        "adress": "",
+        "deliveryDate": " - ",
+        "adress": "Люберцы, ул.Шевлякова, д.8, кв.21",
         "isAdmin": false,
         "cookie": "6acw@b^5o9@3",
-        "whiteList": "",
-        "blackList": "",
+        "whiteList": "Лучший подарок тот, который можно съесть выпить или прочитать :)",
+        "blackList": "Цветы :)",
         "isPart": "ZEZavyalov@croc.ru",
         "img": 3,
-        "status": 1
+        "status": 1,
+        "phone": "+79160778989"
     }, {
         "aboutMe": "",
         "password": "9055",
@@ -2813,46 +2911,49 @@
         "img": 1,
         "status": 1
     }, {
-        "aboutMe": "",
+        "aboutMe": "Всё есть-)",
         "password": "1040",
         "gmail": "mstrizhkov@croc.ru",
         "Name": "Стрижков Максим Борисович",
         "department": "Администрация",
         "Position": "Коммерческий директор, Заместитель  ген.директора, директор деп-та",
-        "deliveryDate": "-",
-        "adress": "",
+        "deliveryDate": "2020-12-21 - 2020-12-31",
+        "adress": "mstrizhkov@croc.ru",
         "isAdmin": false,
         "cookie": "6%lxt936c@2@",
-        "whiteList": "",
-        "blackList": "",
+        "whiteList": "в электронном виде",
+        "blackList": "нет",
         "isPart": "AnIvanov@croc.ru",
         "img": 3,
-        "status": 1
+        "status": 2,
+        "statusT": false,
+        "phone": "89857730251"
     }, {
-        "aboutMe": "",
+        "aboutMe": "Рад любому подарку со смыслом",
         "password": "3542",
         "gmail": "VTantzorov@croc.ru",
         "Name": "Танцоров Вячеслав Леонидович",
         "department": "Департамент маркетинга",
         "Position": "Директор по операционному маркетингу",
         "branch": "операционный маркетинг",
-        "deliveryDate": "-",
-        "adress": "",
+        "deliveryDate": "2020-12-15 - 2020-12-21",
+        "adress": "Москва, Ленинский пр-т, 111/1 кв 310",
         "isAdmin": false,
         "cookie": "n9f*y43v7j&%",
-        "whiteList": "",
-        "blackList": "",
+        "whiteList": "Елочную игрушку, которую каждый год хочется повесить на самое видное место -))",
+        "blackList": "Пена для бритья -)",
         "isPart": "boris@croc.ru",
         "img": 4,
-        "status": 1
+        "status": 1,
+        "phone": "+7 916 526-1311"
     }, {
-        "aboutMe": "",
+        "aboutMe": "люблю все стильное, красивое и функциональное :)",
         "password": "5656",
         "gmail": "MUkolova@croc.ru",
         "Name": "Уколова Мария Юрьевна",
         "department": "Департамент информационных технологий",
         "Position": "Директор  департамента",
-        "deliveryDate": "-",
+        "deliveryDate": " - ",
         "adress": "",
         "isAdmin": false,
         "cookie": "hk$kl7!7r1hs",
@@ -2934,7 +3035,7 @@
         "code": "388705",
         "discount": "50%"
     }, {
-        "is": false,
+        "is": "mkan@croc.ru",
         "code": "646616",
         "discount": "50%"
     }, {
@@ -2946,11 +3047,11 @@
         "code": "671630",
         "discount": "50%"
     }, {
-        "is": false,
+        "is": "nzharnikova@croc.ru",
         "code": "896411",
         "discount": "50%"
     }, {
-        "is": false,
+        "is": "KRakhimova@croc.ru",
         "code": "156245",
         "discount": "50%"
     }, {
@@ -2958,11 +3059,11 @@
         "code": "129699",
         "discount": "30%"
     }, {
-        "is": false,
+        "is": "mazakharova@croc.ru",
         "code": "396419",
         "discount": "30%"
     }, {
-        "is": false,
+        "is": "skashlev@croc.ru",
         "code": "369421",
         "discount": "30%"
     }, {
@@ -2982,7 +3083,7 @@
         "code": "177602",
         "discount": "30%"
     }, {
-        "is": false,
+        "is": "annikitina@croc.ru",
         "code": "764296",
         "discount": "30%"
     }, {
@@ -3026,7 +3127,7 @@
         "code": "641487",
         "discount": "30%"
     }, {
-        "is": false,
+        "is": "AStepovik@croc.ru",
         "code": "752334",
         "discount": "30%"
     }, {
@@ -3046,11 +3147,11 @@
         "code": "637914",
         "discount": "20%"
     }, {
-        "is": false,
+        "is": "VSuprunenko@croc.ru",
         "code": "877244",
         "discount": "20%"
     }, {
-        "is": false,
+        "is": "danikolaev@croc.ru",
         "code": "980162",
         "discount": "20%"
     }, {
@@ -3058,7 +3159,7 @@
         "code": "345973",
         "discount": "20%"
     }, {
-        "is": false,
+        "is": "vchekanova@croc.ru",
         "code": "533418",
         "discount": "20%"
     }, {
@@ -3070,7 +3171,7 @@
         "code": "967006",
         "discount": "20%"
     }, {
-        "is": false,
+        "is": "YSenyukova@croc.ru",
         "code": "889910",
         "discount": "20%"
     }, {
@@ -3078,7 +3179,7 @@
         "code": "239865",
         "discount": "20%"
     }, {
-        "is": false,
+        "is": "mborovik@croc.ru",
         "code": "452220",
         "discount": "20%"
     }, {
@@ -3090,7 +3191,7 @@
         "code": "737376",
         "discount": "20%"
     }, {
-        "is": false,
+        "is": "AlVasiltsova@croc.ru",
         "code": "318128",
         "discount": "20%"
     }, {
@@ -3102,7 +3203,7 @@
         "code": "990257",
         "discount": "20%"
     }, {
-        "is": false,
+        "is": "art@croc.ru",
         "code": "395750",
         "discount": "20%"
     }, {
@@ -3122,11 +3223,11 @@
         "code": "267012",
         "discount": "20%"
     }, {
-        "is": false,
+        "is": "EBobkova@croc.ru",
         "code": "942475",
         "discount": "20%"
     }, {
-        "is": false,
+        "is": "slantsova@croc.ru",
         "code": "235134",
         "discount": "20%"
     }, {
@@ -3138,19 +3239,19 @@
         "code": "738234",
         "discount": "20%"
     }, {
-        "is": false,
+        "is": "DmiIvanov@croc.ru",
         "code": "119650",
         "discount": "20%"
     }, {
-        "is": false,
+        "is": "vsafonova@croc.ru",
         "code": "427216",
         "discount": "20%"
     }, {
-        "is": false,
+        "is": "askritskaya@croc.ru",
         "code": "170917",
         "discount": "20%"
     }, {
-        "is": false,
+        "is": "mmukhin@croc.ru",
         "code": "857587",
         "discount": "20%"
     }, {
@@ -3166,7 +3267,7 @@
         "code": "405889",
         "discount": "20%"
     }, {
-        "is": false,
+        "is": "Sgorshkova@croc.ru",
         "code": "826841",
         "discount": "20%"
     }, {
@@ -3178,7 +3279,7 @@
         "code": "728374",
         "discount": "20%"
     }, {
-        "is": false,
+        "is": "abashveev@croc.ru",
         "code": "312272",
         "discount": "20%"
     }, {
@@ -3190,11 +3291,11 @@
         "code": "624407",
         "discount": "20%"
     }, {
-        "is": false,
+        "is": "gdyatlov@croc.ru",
         "code": "287751",
         "discount": "20%"
     }, {
-        "is": false,
+        "is": "skorzhov@croc.ru",
         "code": "404156",
         "discount": "20%"
     }, {
@@ -3226,7 +3327,7 @@
         "code": "886198",
         "discount": "20%"
     }, {
-        "is": false,
+        "is": "Evarakina@croc.ru",
         "code": "492062",
         "discount": "20%"
     }, {
@@ -3242,7 +3343,7 @@
         "code": "610635",
         "discount": "15%"
     }, {
-        "is": false,
+        "is": "mlob@croc.ru",
         "code": "240554",
         "discount": "15%"
     }, {
@@ -3254,11 +3355,11 @@
         "code": "158258",
         "discount": "15%"
     }, {
-        "is": false,
+        "is": "AZheleznova@croc.ru",
         "code": "753571",
         "discount": "15%"
     }, {
-        "is": false,
+        "is": "MSidorenko@croc.ru",
         "code": "600677",
         "discount": "15%"
     }, {
@@ -3266,11 +3367,11 @@
         "code": "787702",
         "discount": "15%"
     }, {
-        "is": false,
+        "is": "itarkhova@croc.ru",
         "code": "844060",
         "discount": "15%"
     }, {
-        "is": false,
+        "is": "amakhankin@croc.ru",
         "code": "489856",
         "discount": "15%"
     }, {
@@ -3282,7 +3383,7 @@
         "code": "361471",
         "discount": "15%"
     }, {
-        "is": false,
+        "is": "AKornilovich@croc.ru",
         "code": "281722",
         "discount": "15%"
     }, {
@@ -3290,7 +3391,7 @@
         "code": "296547",
         "discount": "15%"
     }, {
-        "is": false,
+        "is": "OTavostina@croc.ru",
         "code": "508583",
         "discount": "15%"
     }, {
@@ -3298,7 +3399,7 @@
         "code": "961580",
         "discount": "15%"
     }, {
-        "is": false,
+        "is": "ayafarov@croc.ru",
         "code": "873820",
         "discount": "15%"
     }, {
@@ -3322,11 +3423,11 @@
         "code": "792716",
         "discount": "15%"
     }, {
-        "is": "ykonovalova@croc.ru",
+        "is": "mispusinov@croc.ru",
         "code": "668536",
         "discount": "15%"
     }, {
-        "is": false,
+        "is": "ERozhnikova@croc.ru",
         "code": "510733",
         "discount": "15%"
     }, {
@@ -3362,11 +3463,11 @@
         "code": "647594",
         "discount": "15%"
     }, {
-        "is": "vchagina@croc.ru",
+        "is": "KMatvienko@croc.ru",
         "code": "744110",
         "discount": "15%"
     }, {
-        "is": false,
+        "is": "NUstinova@croc.ru",
         "code": "169822",
         "discount": "15%"
     }, {

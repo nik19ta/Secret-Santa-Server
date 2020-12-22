@@ -30,6 +30,10 @@ app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
 });
+app.use(bodyParser.urlencoded({
+    limit: '5000mb',
+    extended: true
+}))
 
 app.use(bodyParser.urlencoded({
     extended: true
@@ -85,6 +89,21 @@ app.post('/add', jsonParser, async function (req, res) {
             res.send('error')
         }
     }
+
+})
+app.post('/say_thanks', jsonParser, async function (req, res) {
+        let data = {
+            emailfrom: req.body.emailfrom,
+            emailto: req.body.emailto,
+            photos: req.body.photos,
+            text: req.body.text,
+        }
+    
+        db.say_thanks(data);
+
+        res.send({
+                'status': 'ok',
+            });
 
 })
 app.post('/gift_is_ready', jsonParser, async function (req, res) {
